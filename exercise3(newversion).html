@@ -61,8 +61,7 @@ async function retrieveData(value){
     try{
         const response = await fetch('https://67c1fe7061d8935867e5090a.mockapi.io/user_api');
         const data = await response.json();
-        console.log('Fetched Data:', data);
-
+        
         for(let i = 0; i < data.length; i++){
             if(data[i].id === value){
                 console.log(data[i]);
