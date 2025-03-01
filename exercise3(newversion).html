@@ -21,7 +21,6 @@ const label = document.getElementById('textLabel')
 input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         const idNum = event.target.value;
-        label.textContent = idNum;
         input.value = "";
         if(idNum){
             retrieveData(idNum);
